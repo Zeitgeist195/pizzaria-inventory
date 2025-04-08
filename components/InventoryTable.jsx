@@ -39,10 +39,18 @@ const InventoryTable = () => {
     })
 
     const fetchItems = async () => {
-        const response = await fetch('/api/items')
-        const data = await response.json()
-        setItems(data)
-    }
+        try {
+          const response = await fetch('/api/items')
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`)
+          }
+          const data = await response.json()
+          setItems(Array.isArray(data) ? data : [])
+        } catch (error) {
+          console.error('Fetch error:', error)
+          setItems([])
+        }
+      }
 
     useEffect(() => {
         fetchItems()

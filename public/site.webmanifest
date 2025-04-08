@@ -1,0 +1,10 @@
+{
+    "name": "Pizzaria Inventory",
+    "short_name": "Estoque",
+    "icons": [],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/"
+}
