@@ -150,6 +150,8 @@ const InventoryTable = () => {
                             <MenuItem value="Saco">Saco</MenuItem>
                             <MenuItem value="Lata">Lata</MenuItem>
                             <MenuItem value="Pacote">Pacote</MenuItem>
+                            <MenuItem value="Kilo">Kilo</MenuItem>
+                            <MenuItem value="Unidade">Unidade</MenuItem>
                         </TextField>
                     </Grid>
                     
@@ -218,6 +220,8 @@ const InventoryTable = () => {
                                             <MenuItem value="Saco">Saco</MenuItem>
                                             <MenuItem value="Lata">Lata</MenuItem>
                                             <MenuItem value="Pacote">Pacote</MenuItem>
+                                            <MenuItem value="Kilo">Kilo</MenuItem>
+                                            <MenuItem value="Unidade">Unidade</MenuItem>
                                         </TextField>
                                     </Grid>
                                     <Grid item xs={4}>
@@ -346,6 +350,8 @@ const InventoryTable = () => {
                                                 <MenuItem value="Saco">Saco</MenuItem>
                                                 <MenuItem value="Lata">Lata</MenuItem>
                                                 <MenuItem value="Pacote">Pacote</MenuItem>
+                                                <MenuItem value="Kilo">Kilo</MenuItem>
+                                                <MenuItem value="Unidade">Unidade</MenuItem>
                                             </TextField>
                                         </TableCell>
                                         <TableCell align="center">
