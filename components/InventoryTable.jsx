@@ -105,18 +105,17 @@ const InventoryTable = () => {
             {/* Formulário de Adição */}
             <Box sx={{ p: 2 }}>
                 <Grid container align="center" spacing={2}>
-                    <Grid item xs={12} sm={6} md={3}>
+                    <Grid item size={{ xs: 12, md: 2, sm: 6 }}>
                         <TextField
                             label="Nome do Item"
                             value={newItem.item_name}
                             onChange={(e) => setNewItem({ ...newItem, item_name: e.target.value })}
                             fullWidth
                             size={isMobile ? 'small' : 'medium'}
-                            maxWidth={isMobile ? '50%' : '90%'}
                         />
                     </Grid>
                     
-                    <Grid item xs={6} sm={3} md={2}>
+                    <Grid item size={{ xs: 12, md: 2, sm: 6 }}>
                         <TextField
                             label="Quantidade"
                             type="number"
@@ -124,11 +123,10 @@ const InventoryTable = () => {
                             onChange={(e) => setNewItem({ ...newItem, quantity: parseInt(e.target.value) })}
                             fullWidth
                             size={isMobile ? 'small' : 'medium'}
-                            maxWidth={isMobile ? '50%' : 'auto'}
                         />
                     </Grid>
                     
-                    <Grid item xs={6} sm={3} md={2}>
+                    <Grid item size={{ xs: 12, md: 2, sm: 6,  }}>
                         <TextField
                             label="Estoque Mín."
                             type="number"
@@ -136,11 +134,10 @@ const InventoryTable = () => {
                             onChange={(e) => setNewItem({ ...newItem, minimum_stock: parseInt(e.target.value) })}
                             fullWidth
                             size={isMobile ? 'small' : 'medium'}
-                            maxWidth={isMobile ? '50%' : 'auto'}
                         />
                     </Grid>
                     
-                    <Grid item xs={12} sm={6} md={3}>
+                    <Grid item size={{ xs: 12, md: 2, sm: 6 }}>
                         <TextField
                             label="Tipo"
                             value={newItem.type}
@@ -148,7 +145,6 @@ const InventoryTable = () => {
                             select
                             fullWidth
                             size={isMobile ? 'small' : 'medium'}
-                            maxWidth={isMobile ? '50%' : 'auto'}
                         >
                             <MenuItem value="Outros">Outros</MenuItem>
                             <MenuItem value="Saco">Saco</MenuItem>
@@ -157,13 +153,13 @@ const InventoryTable = () => {
                         </TextField>
                     </Grid>
                     
-                    <Grid item xs={12} sm={6} md={2}>
+                    <Grid size={{ xs: 12, sm: 12, md: 4 }}>
                         <Button 
                             variant="contained" 
                             color="primary" 
                             onClick={handleAddItem}
                             fullWidth
-                            size={isMobile ? 'small' : 'medium'}
+                            size={isMobile ? 'small' : 'large'}
                         >
                             Adicionar
                         </Button>
